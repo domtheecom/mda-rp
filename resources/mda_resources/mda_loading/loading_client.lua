@@ -24,20 +24,8 @@ RegisterNetEvent('mda_loading:setPlayerInfo', function(data)
     sendNUIMessage('setPlayerInfo', data)
 end)
 
-<<<<<<< codex/build-custom-fivem-server-scripts-yu6dsk
-RegisterNetEvent('mda_loading:setPlayerCount', function(data)
-    local payload = data
-    if type(payload) ~= 'table' then
-        payload = { count = tonumber(data) or 0 }
-    end
-    if not payload.max or payload.max <= 0 then
-        payload.max = GetConvarInt('sv_maxclients', 48)
-    end
-    sendNUIMessage('setPlayerCount', payload)
-=======
 RegisterNetEvent('mda_loading:setPlayerCount', function(count)
     sendNUIMessage('setPlayerCount', { count = count })
->>>>>>> main
 end)
 
 AddEventHandler('onClientResourceStart', function(resourceName)

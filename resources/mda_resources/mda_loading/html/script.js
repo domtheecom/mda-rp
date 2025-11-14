@@ -1,6 +1,10 @@
 const audio = new Audio();
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
 const config = window.MDA_LOADING_CONFIG || {};
 const tips = Array.isArray(config.tips) && config.tips.length ? config.tips : ['Stay sharp, cadet.'];
+=======
+const config = window.MDA_LOADING_CONFIG;
+>>>>>>> main
 let tipsIndex = 0;
 
 function setText(id, value) {
@@ -30,8 +34,13 @@ function updateProgress(percent) {
 }
 
 function nextTip() {
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
   tipsIndex = (tipsIndex + 1) % tips.length;
   appendResource(`Tip: ${tips[tipsIndex]}`);
+=======
+  tipsIndex = (tipsIndex + 1) % config.tips.length;
+  appendResource(`Tip: ${config.tips[tipsIndex]}`);
+>>>>>>> main
 }
 
 window.addEventListener('message', (event) => {
@@ -57,13 +66,11 @@ window.addEventListener('message', (event) => {
   }
 
   if (data.action === 'setPlayerCount') {
-<<<<<<< codex/build-custom-fivem-server-scripts-yu6dsk
-    const maxPlayers = data.max || config.maxPlayers || 48;
-    const currentCount = typeof data.count === 'number' ? data.count : 0;
-    setText('currentPlayers', `Players: ${currentCount} / ${maxPlayers}`);
-=======
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
     const maxPlayers = config.maxPlayers || 128;
     setText('currentPlayers', `Players: ${data.count} / ${maxPlayers}`);
+=======
+    setText('currentPlayers', `Players: ${data.count} / ${config.maxPlayers}`);
 >>>>>>> main
   }
 
@@ -82,6 +89,7 @@ window.addEventListener('message', (event) => {
 
 setInterval(nextTip, 10000);
 
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
 if (config.backgroundImage) {
   const overlay = document.getElementById('overlay');
   if (overlay) {
@@ -122,3 +130,8 @@ if (config.discordInvite) {
 const welcomeName = config.serverName || 'Miami-Dade Academy RP';
 appendResource(`Welcome to the ${welcomeName} loading experience.`);
 appendResource(`Tip: ${tips[0]}`);
+=======
+setText('discordInvite', config.discordInvite.replace('https://', ''));
+appendResource('Welcome to the Miami-Dade Academy RP loading experience.');
+appendResource(`Tip: ${config.tips[0]}`);
+>>>>>>> main

@@ -6,7 +6,11 @@ window.MDA_LOADING_CONFIG = {
   serverTagline: 'Join The Academy & Start Your Career!',
   discordInvite: 'https://discord.gg/gkHkWqJP',
   address: 'g1.ny.qficloud.com:6327',
+<<<<<<< codex/build-custom-fivem-server-scripts-yu6dsk
+  maxPlayers: 48,
+=======
   maxPlayers: 128,
+>>>>>>> main
   tips: [
     'Review the academy handbook before your first patrol.',
     'Use /panic to alert dispatch when you need immediate backup.',

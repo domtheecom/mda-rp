@@ -57,8 +57,14 @@ window.addEventListener('message', (event) => {
   }
 
   if (data.action === 'setPlayerCount') {
+<<<<<<< codex/build-custom-fivem-server-scripts-yu6dsk
+    const maxPlayers = data.max || config.maxPlayers || 48;
+    const currentCount = typeof data.count === 'number' ? data.count : 0;
+    setText('currentPlayers', `Players: ${currentCount} / ${maxPlayers}`);
+=======
     const maxPlayers = config.maxPlayers || 128;
     setText('currentPlayers', `Players: ${data.count} / ${maxPlayers}`);
+>>>>>>> main
   }
 
   if (data.action === 'setProgress') {

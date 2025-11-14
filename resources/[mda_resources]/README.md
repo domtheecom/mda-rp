@@ -26,5 +26,9 @@ Drop your own files inside `mda_loading/html/` (or subfolders) and update `mda_l
 - `backgroundImage`: path to your full-screen backdrop (e.g. `assets/miami-skyline.jpg`).
 - `logoImage`: path to the academy badge/icon displayed in the header.
 - `musicFile`: path to the ambient soundtrack (`.mp3` preferred).
+<<<<<<< codex/build-custom-fivem-server-scripts-yu6dsk
+- `maxPlayers`: update this to match `sv_maxclients` (currently **48**) so the loading screen always shows the correct slot cap.
+=======
+>>>>>>> main
 
 All three properties support relative paths, so you can organize assets under `mda_loading/html/assets/`. No stock images, icons, or audio are committed—add them on your server host after deploying the scripts. Replace `assets/background.jpg`, `assets/logo.png`, and `assets/music.mp3` with your branded files (keeping the same names) or adjust the config paths to match your filenames.

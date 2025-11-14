@@ -1,0 +1,172 @@
+:root {
+  --color-main: #2cab8e;
+  --color-secondary: #033933;
+  --color-text: #f7e9c3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, rgba(44, 171, 142, 0.2), rgba(3, 57, 51, 0.9)),
+    #021b18;
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: var(--mda-loading-background, url('background.jpg'));
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.container {
+  width: min(1100px, 90vw);
+  background: rgba(3, 57, 51, 0.85);
+  border: 2px solid rgba(247, 233, 195, 0.15);
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+  filter: drop-shadow(0 0 12px rgba(44, 171, 142, 0.6));
+}
+
+.titles h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.titles p {
+  font-size: 1.125rem;
+  opacity: 0.85;
+}
+
+.player-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-block {
+  background: rgba(44, 171, 142, 0.1);
+  border: 1px solid rgba(247, 233, 195, 0.2);
+  border-radius: 16px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.18rem;
+  color: rgba(247, 233, 195, 0.7);
+}
+
+.value {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.status-card {
+  background: rgba(2, 27, 24, 0.85);
+  border-radius: 18px;
+  padding: 1.75rem;
+  border: 1px solid rgba(247, 233, 195, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.status-card h2 {
+  font-size: 1.35rem;
+  color: var(--color-main);
+}
+
+.status-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.progress {
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(247, 233, 195, 0.2);
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #2cab8e, #f7e9c3);
+  transition: width 0.3s ease;
+}
+
+#resourceList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  max-height: 160px;
+  overflow: hidden;
+}
+
+#resourceList li {
+  font-size: 0.95rem;
+  color: rgba(247, 233, 195, 0.8);
+}
+
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  color: rgba(247, 233, 195, 0.65);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titles h1 {
+    font-size: 1.8rem;
+  }
+}

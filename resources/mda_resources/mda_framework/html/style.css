@@ -1,0 +1,76 @@
+:root {
+  --color-main: #2cab8e;
+  --color-secondary: #033933;
+  --color-text: #f7e9c3;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+}
+
+.framework {
+  position: absolute;
+  bottom: 3.5vh;
+  left: 2.2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  color: var(--color-text);
+}
+
+.meters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 0.45rem 0.9rem;
+  background: rgba(3, 57, 51, 0.72);
+  border: 1px solid rgba(247, 233, 195, 0.35);
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+}
+
+.meter span {
+  font-size: 0.7rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(247, 233, 195, 0.2);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+
+.bar div {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, rgba(44, 171, 142, 0.9), rgba(247, 233, 195, 0.8));
+  transition: width 0.25s ease;
+}
+
+.accounts {
+  display: flex;
+  gap: 1.2rem;
+  background: rgba(2, 27, 24, 0.8);
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+  border: 1px solid rgba(247, 233, 195, 0.35);
+}
+
+.accounts .label {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.accounts span:last-child {
+  font-size: 0.95rem;
+  font-weight: 600;
+}

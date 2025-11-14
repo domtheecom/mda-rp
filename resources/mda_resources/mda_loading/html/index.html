@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miami-Dade Academy RP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="config.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div class="container">
+      <header>
+        <img id="serverLogo" src="logo.png" alt="Metro Dade Academy RP" class="logo" />
+        <div class="titles">
+          <h1 id="serverName">Miami-Dade Academy RP</h1>
+          <p id="serverTagline">Join The Academy &amp; Start Your Career!</p>
+        </div>
+      </header>
+      <section class="player-info">
+        <div class="info-block">
+          <span class="label">Miami ID</span>
+          <span id="miamiId" class="value">0000</span>
+        </div>
+        <div class="info-block">
+          <span class="label">RP Name</span>
+          <span id="rpName" class="value">Recruit</span>
+        </div>
+        <div class="info-block">
+          <span class="label">Discord</span>
+          <span id="discordTag" class="value">Pending</span>
+        </div>
+      </section>
+      <section class="status">
+        <div class="status-card">
+          <h2>Server Information</h2>
+          <ul>
+            <li id="currentPlayers">Players: 0 / 128</li>
+            <li id="serverNameRow">Server Name: Miami-Dade Academy RP</li>
+            <li id="serverAddressRow">Address: g1.ny.qficloud.com:6327</li>
+            <li>Discord: <span id="discordInvite">discord.gg/gkHkWqJP</span></li>
+          </ul>
+        </div>
+        <div class="status-card">
+          <h2>Loading Progress</h2>
+          <div class="progress">
+            <div id="progressBar"></div>
+          </div>
+          <div id="loadingText">Initializing resources...</div>
+          <ul id="resourceList"></ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Connecting to the academy. Please standby...</p>
+    </footer>
+  </body>
+</html>

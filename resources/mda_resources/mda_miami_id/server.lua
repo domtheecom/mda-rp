@@ -1,5 +1,18 @@
 local cache = {}
 local lastCachePurge = os.time()
+<<<<<<< codex/build-custom-fivem-server-scripts-35acq0
+local alwaysAllowed = {}
+
+for _, discordId in ipairs(Config.AlwaysAllowedDiscordIds or {}) do
+    alwaysAllowed[tostring(discordId)] = true
+end
+
+local function isAlwaysAllowed(discordId)
+    if not discordId then return false end
+    return alwaysAllowed[tostring(discordId)] == true
+end
+=======
+>>>>>>> main
 
 local function ensureTable()
     local tableName = Config.Database.tableName
@@ -199,11 +212,28 @@ AddEventHandler('playerConnecting', function(name, setKickReason, deferrals)
     local identity = fetchIdentityByDiscord(discordId)
     identity = ensureIdentity(identity, discordId)
 
+<<<<<<< codex/build-custom-fivem-server-scripts-35acq0
+    local bypass = isAlwaysAllowed(discordId)
+
+    if identity.status ~= 'active' and not bypass then
+=======
     if identity.status ~= 'active' then
+>>>>>>> main
         deferrals.done('Your Miami ID is pending approval. Please finish your academy registration in Discord.')
         return
     end
 
+<<<<<<< codex/build-custom-fivem-server-scripts-35acq0
+    if bypass and identity.status ~= 'active' then
+        identity.status = 'active'
+        if not identity.employment or identity.employment == '' then
+            identity.employment = 'Unemployed'
+        end
+        log(('Bypassing Miami ID status for %s (%s)'):format(identity.rpName or 'Command Staff', discordId))
+    end
+
+=======
+>>>>>>> main
     upsertIdentity(identity)
 
     deferrals.update('Welcome to the academy, ' .. (identity.rpName or 'Recruit') .. '.')
@@ -222,6 +252,16 @@ RegisterNetEvent('mda_miami_id:requestIdentity', function()
     local discordId = extractDiscordId(src)
     local identity = fetchIdentityByDiscord(discordId)
     identity = ensureIdentity(identity, discordId)
+<<<<<<< codex/build-custom-fivem-server-scripts-35acq0
+    if isAlwaysAllowed(discordId) and identity.status ~= 'active' then
+        identity.status = 'active'
+        if not identity.employment or identity.employment == '' then
+            identity.employment = 'Unemployed'
+        end
+        upsertIdentity(identity)
+    end
+=======
+>>>>>>> main
     TriggerClientEvent('mda_miami_id:setIdentity', src, identity)
     local playerState = Player(src).state
     playerState:set('mdaIdentity', identityToClient(identity), true)

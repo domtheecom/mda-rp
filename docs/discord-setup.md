@@ -3,7 +3,11 @@
 Use this guide to align your Discord server roles and channels with the in-game systems.
 
 ## Core Roles
+<<<<<<< codex/build-custom-fivem-server-scripts-iclah3
+Create the following roles in the order listed and copy their Discord role IDs into `resources/[mda_resources]/mda_rolesync/config.lua`.
+=======
 Create the following roles in the order listed and copy their Discord role IDs into `resources/mda_resources/mda_rolesync/config.lua`.
+>>>>>>> main
 
 | Role Name | Purpose | Notes |
 |-----------|---------|-------|

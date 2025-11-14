@@ -1,6 +1,14 @@
 window.MDA_LOADING_CONFIG = {
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+  musicFile: 'assets/music.mp3',
+  backgroundImage: 'assets/background.jpg',
+  logoImage: 'assets/logo.png',
+  serverName: 'Miami-Dade Academy RP',
+  serverTagline: 'Join The Academy & Start Your Career!',
+=======
   musicFile: 'music.mp3',
   serverName: 'Miami-Dade Academy RP',
+>>>>>>> main
   discordInvite: 'https://discord.gg/gkHkWqJP',
   address: 'g1.ny.qficloud.com:6327',
   maxPlayers: 128,

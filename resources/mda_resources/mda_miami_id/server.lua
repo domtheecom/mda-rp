@@ -1,6 +1,9 @@
 local cache = {}
 local lastCachePurge = os.time()
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
+>>>>>>> main
 local alwaysAllowed = {}
 
 for _, discordId in ipairs(Config.AlwaysAllowedDiscordIds or {}) do
@@ -11,7 +14,10 @@ local function isAlwaysAllowed(discordId)
     if not discordId then return false end
     return alwaysAllowed[tostring(discordId)] == true
 end
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
 =======
+=======
+>>>>>>> main
 >>>>>>> main
 
 local function ensureTable()
@@ -212,6 +218,11 @@ AddEventHandler('playerConnecting', function(name, setKickReason, deferrals)
     local identity = fetchIdentityByDiscord(discordId)
     identity = ensureIdentity(identity, discordId)
 
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+    local bypass = isAlwaysAllowed(discordId)
+
+    if identity.status ~= 'active' and not bypass then
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
     local bypass = isAlwaysAllowed(discordId)
 
@@ -219,11 +230,15 @@ AddEventHandler('playerConnecting', function(name, setKickReason, deferrals)
 =======
     if identity.status ~= 'active' then
 >>>>>>> main
+>>>>>>> main
         deferrals.done('Your Miami ID is pending approval. Please finish your academy registration in Discord.')
         return
     end
 
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
+>>>>>>> main
     if bypass and identity.status ~= 'active' then
         identity.status = 'active'
         if not identity.employment or identity.employment == '' then
@@ -232,7 +247,10 @@ AddEventHandler('playerConnecting', function(name, setKickReason, deferrals)
         log(('Bypassing Miami ID status for %s (%s)'):format(identity.rpName or 'Command Staff', discordId))
     end
 
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
 =======
+=======
+>>>>>>> main
 >>>>>>> main
     upsertIdentity(identity)
 
@@ -252,7 +270,10 @@ RegisterNetEvent('mda_miami_id:requestIdentity', function()
     local discordId = extractDiscordId(src)
     local identity = fetchIdentityByDiscord(discordId)
     identity = ensureIdentity(identity, discordId)
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
+>>>>>>> main
     if isAlwaysAllowed(discordId) and identity.status ~= 'active' then
         identity.status = 'active'
         if not identity.employment or identity.employment == '' then
@@ -260,7 +281,10 @@ RegisterNetEvent('mda_miami_id:requestIdentity', function()
         end
         upsertIdentity(identity)
     end
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
 =======
+=======
+>>>>>>> main
 >>>>>>> main
     TriggerClientEvent('mda_miami_id:setIdentity', src, identity)
     local playerState = Player(src).state

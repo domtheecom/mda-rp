@@ -26,7 +26,14 @@ body {
 #overlay {
   position: absolute;
   inset: 0;
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: var(--mda-loading-background, url('background.jpg'));
+=======
   background: url('background.jpg') center/cover no-repeat;
+>>>>>>> main
   opacity: 0.15;
   z-index: -1;
 }

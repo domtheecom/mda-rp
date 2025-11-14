@@ -12,10 +12,14 @@ Config.RoleMappings = {
         label = 'Florida Highway Patrol',
         employment = 'Agency - FHP',
         payoutGroup = 'fhp',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.agency.fhp'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.agency.fhp'
 =======
         ace = 'mda.agency.fhp'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -23,10 +27,14 @@ Config.RoleMappings = {
         label = 'Miami Dade Fire Rescue',
         employment = 'Agency - MDFR',
         payoutGroup = 'mdfr',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.agency.mdfr'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.agency.mdfr'
 =======
         ace = 'mda.agency.mdfr'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -34,10 +42,14 @@ Config.RoleMappings = {
         label = 'Florida Fish & Wildlife',
         employment = 'Agency - FWC',
         payoutGroup = 'fwc',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.agency.fwc'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.agency.fwc'
 =======
         ace = 'mda.agency.fwc'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -45,10 +57,14 @@ Config.RoleMappings = {
         label = 'Miami-Dade Police Department',
         employment = 'Agency - MDPD',
         payoutGroup = 'mdpd',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.agency.mdpd'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.agency.mdpd'
 =======
         ace = 'mda.agency.mdpd'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -56,10 +72,14 @@ Config.RoleMappings = {
         label = 'Miami-Dade SWAT',
         employment = 'Agency - MD-SWAT',
         payoutGroup = 'mdswat',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.agency.mdswat'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.agency.mdswat'
 =======
         ace = 'mda.agency.mdswat'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -67,10 +87,14 @@ Config.RoleMappings = {
         label = 'Florida Department of Transportation',
         employment = 'Agency - FDOT',
         payoutGroup = 'fdot',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.agency.fdot'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.agency.fdot'
 =======
         ace = 'mda.agency.fdot'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -78,10 +102,14 @@ Config.RoleMappings = {
         label = 'Miami-Dade Dispatch',
         employment = 'Agency - Dispatch',
         payoutGroup = 'dispatch',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.agency.dispatch'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.agency.dispatch'
 =======
         ace = 'mda.agency.dispatch'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -89,10 +117,14 @@ Config.RoleMappings = {
         label = 'Business Owner',
         employment = 'Business Owner',
         payoutGroup = 'business',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.business'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.business'
 =======
         ace = 'mda.business'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -100,10 +132,14 @@ Config.RoleMappings = {
         label = 'Gang Member',
         employment = 'Gang Member',
         payoutGroup = 'gang',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.gang'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.gang'
 =======
         ace = 'mda.gang'
+>>>>>>> main
 >>>>>>> main
     },
     {
@@ -111,10 +147,14 @@ Config.RoleMappings = {
         label = 'Citizen',
         employment = 'Citizen',
         payoutGroup = 'civilian',
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+        ace = 'group.mda.citizen'
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
         ace = 'group.mda.citizen'
 =======
         ace = 'mda.citizen'
+>>>>>>> main
 >>>>>>> main
     }
 }

@@ -2,6 +2,13 @@ Config = {}
 
 Config.RequireDiscord = true
 Config.DiscordGuildId = '1431156290402652182'
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+Config.AlwaysAllowedDiscordIds = {
+    '852299947818483744', -- Director
+    '697240883099074590', -- Gavin
+    '1430751661823098954' -- Jonah
+}
+=======
 <<<<<<< codex/build-custom-fivem-server-scripts-35acq0
 Config.AlwaysAllowedDiscordIds = {
     '852299947818483744', -- Director
@@ -9,6 +16,7 @@ Config.AlwaysAllowedDiscordIds = {
     '1430751661823098954' -- Jonah 
 }
 =======
+>>>>>>> main
 >>>>>>> main
 Config.VerifiedRoleIds = {
     ['Recruit'] = 'academy_recruit',

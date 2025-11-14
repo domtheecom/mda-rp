@@ -19,3 +19,15 @@ All custom scripts for the Miami-Dade Academy RP server live in this folder. Ens
 14. `mda_civ_careers`
 
 Adjust the order if you add new dependencies. The loading screen must be referenced in `server.cfg` via `load_server_icon` and `sets banner_connecting` if desired.
+<<<<<<< codex/build-custom-fivem-server-scripts-ncc9i2
+
+## Customizing the Loading Screen Assets
+Drop your own files inside `mda_loading/html/` (or subfolders) and update `mda_loading/html/config.js`:
+
+- `backgroundImage`: path to your full-screen backdrop (e.g. `assets/miami-skyline.jpg`).
+- `logoImage`: path to the academy badge/icon displayed in the header.
+- `musicFile`: path to the ambient soundtrack (`.mp3` preferred).
+
+All three properties support relative paths, so you can organize assets under `mda_loading/html/assets/`. No stock images, icons, or audio are committed—add them on your server host after deploying the scripts.
+=======
+>>>>>>> main
